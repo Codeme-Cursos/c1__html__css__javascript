@@ -1,0 +1,317 @@
+/* Variables CSS*/
+:root{
+    --primary: crimson;
+    --secondary: rgb(255, 129, 129);
+    --dark: rgb(20, 20, 20);
+    --light:  white;
+    --dark-soft: rgba(0,0,0,0.7);
+    --light-soft: rgba(255, 255, 255, 0.9);
+    --shadow: rgba(255, 255, 255, .3);
+}
+
+/* General Styles */
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-image: url('../assets/bici1.jpg');
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+*{
+    scroll-margin-top: 74px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar__fake{
+    width: 100%;
+    height: 74px;
+    background-color: aqua;
+}
+.navbar > ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;   
+}
+.navbar__logo > a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 30px;
+    font-weight: 600;
+    transition: color 200ms;
+}
+.navbar__logo > a:hover {
+    text-decoration: none;
+    color: var(--secondary);
+}
+.navbar__link{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__link > a {
+    text-decoration: none;
+    color: var(--light);
+    transition: color 200ms;
+}
+.navbar__link > a:hover {
+    text-decoration: none;
+    color: var(--secondary);
+}
+.navbar__link > label {
+    color: var(--light);
+    font-size: 10px;
+}
+
+/* Banner Styles */
+.banner{
+    width: 100%;
+    height: 500px;
+    background-color: var(--dark-soft);
+    color: var(--primary);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 20px;
+  
+}
+.banner > h1 {
+    font-size: 80px;
+    margin: 0;
+    text-align: right;
+    text-shadow: 2px 2px 5px var(--shadow);
+}
+.banner > h2 {
+    font-size: 45px;
+    margin: 0;
+    text-align: right;
+    text-shadow: 4px 4px 10px var(--shadow);
+}
+
+/* Portfolio Styles */
+.portfolio {
+    width: 100%;
+    background-color: var(--primary);
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.portfolio > h1 {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.portfolio__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.portfolio__cards__item{
+    margin: 10px;
+    width: 200px;
+    flex: 1;
+}
+
+.portfolio__cards__item > img{
+    width: 200px;
+    border-radius: 20px 0 20px 0; 
+}
+
+.portfolio__cards__item__body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__cards__item__body > h4 {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 5px 0;
+} 
+.portfolio__cards__item__body > p {
+    font-size: 12px;
+} 
+.portfolio__cards__item__body > a {
+    background-color: var(--primary);
+    color: var(--light);
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: 200ms ease;
+}
+.portfolio__cards__item__body > a:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+/* Experiencies Styles */
+.experiences {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--light-soft);
+    color:  var(--dark);
+    padding: 70px 20px;
+}
+.experiences > h1 {
+    margin: 0;
+    margin-bottom: 40px;
+}
+table {
+    border-collapse: collapse;
+}
+th{
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    border-top: 1px solid var(--primary);
+}
+th:first-child{
+    border-left: 1px solid var(--primary);
+}
+th:last-child{
+    border-right: 1px solid var(--primary);
+}
+
+td {
+    border: 1px solid var(--primary);
+    padding: 0.5rem;
+  }
+
+/* Contact Styles */
+.contact{
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-soft);
+    padding: 70px 20px;
+    color:var(--primary);
+}
+.contact > * {
+    margin: 0 50px;
+}
+.contact__title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+.contact__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+}
+.contact__data > a{
+    display: flex;
+    align-items: center;
+    color:var(--light);
+    text-decoration: none;
+    transition: color 200ms ease;
+}
+.contact__data > a:hover{
+    color:var(--primary);
+}
+.contact__data > a > svg{
+    margin-right: 10px;
+}
+
+/* Footer Styles */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    color: var(--light);
+    flex-wrap: wrap;
+    padding: 70px 20px;
+}
+.footer__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.footer__image > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.footer__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    flex: 1;
+}
+.footer__hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+.footer__hobbies__icons{
+    display: flex;
+}
+.footer__hobbies__icons > span{
+    margin: 0 10px;
+}
+.footer__networks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.footer__networks__item {
+    display: flex;
+}
+.footer__networks__item > a {
+    margin: 0 10px;
+    color: var(--light);
+    transition: color 200ms ease;
+}
+.footer__networks__item > a:hover {
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+/* Copyright Style */
+.copyright{
+
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--light);
+}
+.copyright > p {
+    margin: 0 20px;
+    padding: 10px;
+    border-top: 1px solid var(--secondary);
+    font-size: 12px;
+}
