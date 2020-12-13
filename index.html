@@ -47,7 +47,7 @@
             <h2>Práctica y mecánica</h2>
         </div>
 
-        <div class="portfolio" id="portfolio" >
+        <div class="portfolio" id="portfolio">
             <h1>Portafolio</h1>
             <div class="portfolio__cards">
 
@@ -57,7 +57,43 @@
                         <h4>Titulo</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit corrupti
                             sapiente alias eaque quod nostrum eligendi officia rem illo?</p>
-                        <button href="">Visitar</button>
+                        <button onclick="openModal1()">Visitar</button>
+                        <!-- The Modal -->
+                        <div id="myModal1" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal1()">&times;</span>
+                                <p>Modal 1</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam suscipit
+                                    itaque perspiciatis pariatur quisquam. Ea odit asperiores quam? Pariatur nesciunt
+                                    voluptates recusandae aspernatur reprehenderit, blanditiis ipsum mollitia suscipit
+                                    commodi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio__cards__item">
+                    <img src="./assets/bici2.jpg" alt="No Image">
+                    <div class="portfolio__cards__item__body">
+                        <h4>Titulo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit corrupti
+                            sapiente alias eaque quod nostrum eligendi officia rem illo?</p>
+                        <button onclick="openModal2()">Visitar</button>
+                        <!-- The Modal -->
+                        <div id="myModal2" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal2()">&times;</span>
+                                <p>Modal 2</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam suscipit
+                                    itaque perspiciatis pariatur quisquam. Ea odit asperiores quam? Pariatur nesciunt
+                                    voluptates recusandae aspernatur reprehenderit, blanditiis ipsum mollitia suscipit
+                                    commodi.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -67,7 +103,20 @@
                         <h4>Titulo</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit corrupti
                             sapiente alias eaque quod nostrum eligendi officia rem illo?</p>
-                        <a href="">Visitar</a>
+                        <button onclick="openModal3()">Visitar</button>
+                        <!-- The Modal -->
+                        <div id="myModal3" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal3()">&times;</span>
+                                <p>Modal 3</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam suscipit
+                                    itaque perspiciatis pariatur quisquam. Ea odit asperiores quam? Pariatur nesciunt
+                                    voluptates recusandae aspernatur reprehenderit, blanditiis ipsum mollitia suscipit
+                                    commodi.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -77,17 +126,19 @@
                         <h4>Titulo</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit corrupti
                             sapiente alias eaque quod nostrum eligendi officia rem illo?</p>
-                        <a href="">Visitar</a>
-                    </div>
-                </div>
-
-                <div class="portfolio__cards__item">
-                    <img src="./assets/bici2.jpg" alt="No Image">
-                    <div class="portfolio__cards__item__body">
-                        <h4>Titulo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit corrupti
-                            sapiente alias eaque quod nostrum eligendi officia rem illo?</p>
-                        <a href="">Visitar</a>
+                        <button onclick="openModal4()">Visitar</button>
+                        <!-- The Modal -->
+                        <div id="myModal4" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal4()">&times;</span>
+                                <p>Modal 4</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam suscipit
+                                    itaque perspiciatis pariatur quisquam. Ea odit asperiores quam? Pariatur nesciunt
+                                    voluptates recusandae aspernatur reprehenderit, blanditiis ipsum mollitia suscipit
+                                    commodi.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -224,7 +275,7 @@
     </div>
 
     <script src="./js/theme.js"></script>
-
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
