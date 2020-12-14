@@ -6,7 +6,9 @@
     --light:  white;
     --dark-soft: rgba(0,0,0,0.7);
     --light-soft: rgba(255, 255, 255, 0.9);
-    --shadow: rgba(255, 255, 255, .3);
+    --btn-primary: crimson;
+    --text-primary: crimson;
+    --text-light: white;
 }
 
 /* General Styles */
@@ -16,6 +18,8 @@ body, html {
     font-family: Helvetica, sans-serif;
     background-image: url('../assets/bici1.jpg');
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     scroll-behavior: smooth;
 }
 
@@ -41,7 +45,6 @@ body, html {
 .navbar__fake{
     width: 100%;
     height: 74px;
-    background-color: aqua;
 }
 .navbar > ul {
     list-style: none;
@@ -86,7 +89,7 @@ body, html {
     width: 100%;
     height: 500px;
     background-color: var(--dark-soft);
-    color: var(--primary);
+    color: var(--text-primary);
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -98,13 +101,11 @@ body, html {
     font-size: 80px;
     margin: 0;
     text-align: right;
-    text-shadow: 2px 2px 5px var(--shadow);
 }
 .banner > h2 {
     font-size: 45px;
     margin: 0;
     text-align: right;
-    text-shadow: 4px 4px 10px var(--shadow);
 }
 
 /* Portfolio Styles */
@@ -146,7 +147,7 @@ body, html {
 }
 
 .portfolio__cards__item__body > h4 {
-    color: var(--primary);
+    color: var(--text-primary);
     text-transform: uppercase;
     font-size: 25px;
     margin: 5px 0;
@@ -155,18 +156,19 @@ body, html {
     font-size: 12px;
 } 
 .portfolio__cards__item__body > button {
-    background-color: var(--primary);
-    color: var(--light);
+    background-color: var(--btn-primary);
+    color: var(--text-light);
     border: 1px solid transparent;
     padding: 5px 20px;
     text-decoration: none;
     transition: 200ms ease;
+    cursor: pointer;
 }
 button:focus {outline:0;}
 .portfolio__cards__item__body > button:hover {
     background-color: transparent;
-    border: 1px solid var(--primary);
-    color: var(--primary);
+    border: 1px solid var(--btn-primary);
+    color: var(--btn-primary);
 }
 
 /* Experiencies Styles */
@@ -211,7 +213,7 @@ td {
     justify-content: center;
     background-color: var(--dark-soft);
     padding: 70px 20px;
-    color:var(--primary);
+    color:var(--text-primary);
 }
 .contact > * {
     margin: 0 50px;
